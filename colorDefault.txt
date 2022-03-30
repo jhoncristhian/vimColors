@@ -1,7 +1,8 @@
-//mi configuracion
+//mi otra confuguracion
 syntax on
-set backspace=2
-set laststatus=2
-set clipboard=unnamed
 set nu
 colorscheme evening
+highlight LineNr ctermfg=blue
+highlight LineNr guifg=grey
+highlight LineNr guibg=black
+set tabstop=4
