@@ -1,6 +1,6 @@
 //mi otra confuguracion
 syntax on
-set nu
+set number
 colorscheme evening
 highlight LineNr ctermfg=blue
 highlight LineNr guifg=grey
