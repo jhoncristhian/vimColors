@@ -1,0 +1,7 @@
+//mi configuracion
+syntax on
+set backspace=2
+set laststatus=2
+set clipboard=unnamed
+set nu
+colorscheme evening
