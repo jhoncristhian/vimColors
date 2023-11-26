@@ -6,3 +6,25 @@ highlight LineNr ctermfg=blue
 highlight LineNr guifg=grey
 highlight LineNr guibg=black
 set tabstop=4
+
+//otra config
+set nocompatible
+set history=1000
+let &t_ut='' 
+set nobackup
+set nowritebackup
+set noswapfile
+set autoindent
+set expandtab 
+set shiftwidth=4 
+set softtabstop=4
+set encoding=utf-8        
+set hidden            
+set ignorecase 
+set scrolloff=8   
+set number
+set showmatch
+set lazyredraw
+set ttyfast
+syntax on
+set background=dark
