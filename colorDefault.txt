@@ -28,3 +28,46 @@ set lazyredraw
 set ttyfast
 syntax on
 set background=dark
+
+//conf 10 10 24
+" Activar la sintaxis
+syntax enable
+
+" Esquema de colores oscuro (puedes probar algunos similares)
+colorscheme desert " Puedes probar 'gruvbox' o 'monokai' si lo prefieres
+
+" Mostrar números de línea
+set number
+
+" Mostrar el número de la línea actual y columna en la barra de estado
+set ruler
+
+" Resaltar las coincidencias de búsqueda
+set hlsearch
+set incsearch
+
+" Configuración de tabulación
+set tabstop=4        " Tamaño de tabulador
+set shiftwidth=4     " Tamaño de indentación
+set softtabstop=4    " Número de espacios para cada tabulador
+set expandtab        " Usar espacios en lugar de tabuladores
+
+" Desactivar archivo swap
+set noswapfile
+
+" Fuente personalizada (Consolas, ajustable a tu preferencia)
+set guifont=Consolas:h11
+
+" Colores para los números de línea (similar a lo que ves en la imagen)
+highlight LineNr guifg=yellow guibg=black
+
+" Barra de título personalizada que muestra la ruta del archivo
+set title
+set titlestring=%F
+
+" Ocultar la barra de herramientas si estás usando gVim (opcional)
+set guioptions-=T
+
+" Opciones de menú ocultas
+set guioptions-=m
+
