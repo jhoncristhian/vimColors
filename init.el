@@ -240,6 +240,28 @@
 (setq js-indent-level 2)
 
 ;; ============================================================
+;; RUST — rust-mode + eglot (rust-analyzer)
+;;
+;; Requiere rustup/cargo. rust-analyzer ya instalado en
+;;   ~/.cargo/bin/rust-analyzer.exe
+;; ============================================================
+
+(add-to-list 'exec-path "C:/Users/JHON PARCO/.cargo/bin")
+
+(use-package rust-mode
+  :mode "\\.rs\\'"
+  :config
+  (setq rust-format-on-save t
+        rust-indent-offset  2)
+  (add-hook 'rust-mode-hook #'eglot-ensure))
+
+;; flycheck + rust: no forzar "--lib" ni "cargo test", para que
+;; funcione también en crates solo-binario (p. ej. "my_backend").
+(with-eval-after-load 'flycheck
+  (setq-default flycheck-rust-crate-type nil)
+  (setq flycheck-rust-check-tests nil))
+
+;; ============================================================
 ;; TREESITTER — resaltado mejorado
 ;; ============================================================
 
